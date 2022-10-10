@@ -2,26 +2,32 @@ import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 
 //function declaration
 function App(props:any) {
     console.log("App rendering");
   return (
-    <div>
+    <div className={"App"}>
         {/*/<input/>
         //<input type="date"/>*/}
-
-        {/*<PageTitle title={'This is APP component'}/>
+       {/* <PageTitle title={'This is APP component'}/>
         <PageTitle title={'My friends'}/>
         Article 1
-        <Rating value={1}/>*/}
-        <Accordion titleValue={'Menu'} collapsed={true}/>
-        <Accordion titleValue={'Users'} collapsed={true}/>
-        {/*Article 2
+        <UncontrolledRating titleValue={'Menu'} collapsed={true}/>
+        <UncontrolledRating titleValue={'Users'} collapsed={false}/>
+        Article 2
+        <Rating value={0}/>
+        <Rating value={1}/>
         <Rating value={2}/>
-        <Rating value={props.rating}/>
+        <Rating value={3}/>
         <Rating value={4}/>
         <Rating value={5}/>*/}
+        <UncontrolledRating/>
+        <OnOff />
+        <UncontrolledAccordion titleValue={'Menu'} />
     </div>
   );
 }
