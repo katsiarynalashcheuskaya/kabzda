@@ -1,33 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
-import OnOff from "./components/OnOff/OnOff";
+import {Rating, RatingValueType} from "./components/Rating/Rating";
+import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
+import OnOff from "./components/OnOff/OnOff";
 
 //function declaration
 function App(props:any) {
-    console.log("App rendering");
+    let [ratingValue, setRatingValue] = useState<RatingValueType>(4)
+    let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(true)
+    let [switchOn, setSwitchOn] = useState<boolean>(true);
   return (
     <div className={"App"}>
         {/*/<input/>
         //<input type="date"/>*/}
-       {/* <PageTitle title={'This is APP component'}/>
+        {/*<PageTitle title={'This is APP component'}/>
         <PageTitle title={'My friends'}/>
-        Article 1
-        <UncontrolledRating titleValue={'Menu'} collapsed={true}/>
-        <UncontrolledRating titleValue={'Users'} collapsed={false}/>
-        Article 2
-        <Rating value={0}/>
-        <Rating value={1}/>
-        <Rating value={2}/>
-        <Rating value={3}/>
-        <Rating value={4}/>
-        <Rating value={5}/>*/}
-        <UncontrolledRating/>
-        <OnOff />
+        Article 1*/}
+        <Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onChange={()=>setAccordionCollapsed(!accordionCollapsed)}/>
         <UncontrolledAccordion titleValue={'Menu'} />
+        <UncontrolledAccordion titleValue={'bla-bla'} />
+        <Rating value={ratingValue} clickOnRating={setRatingValue}/>
+        <UncontrolledRating/>
+        {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+        <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
     </div>
   );
 }
