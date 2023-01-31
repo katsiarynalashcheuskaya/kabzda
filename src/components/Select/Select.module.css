@@ -1,0 +1,19 @@
+.selectBlock {
+    margin-top: 30px;
+}
+
+.select .main {
+    border: 1px solid black;
+}
+
+.items {
+    position: absolute;
+    border: 1px solid black;
+    padding: 5px;
+    background: white;
+}
+
+.item.selected {
+    background-color: cornflowerblue;
+    color: white;
+}
