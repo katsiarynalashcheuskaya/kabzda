@@ -6,7 +6,7 @@ import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff"
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 import Select from "./components/Select/Select";
-import SelectWithoutValue from "./components/Select/SelectWithoutValue";
+import {DifficultCountingExample, HelpsReactMemoExample, LikeUseCallback} from "./components/UseMemo/UseMemo";
 
 //function declaration
 function App() {
@@ -48,6 +48,9 @@ function App() {
 
                 ]}/>
         <hr/>
+        <DifficultCountingExample/>
+        <HelpsReactMemoExample/>
+        <LikeUseCallback/>
         {/*<SelectWithoutValue value={value1} onChange={setValue1}
                 items={[
                     {value: '1', title: 'Minsk'},
