@@ -70,7 +70,7 @@ export const HelpsReactMemoExample = () => {
 }
 
 export const LikeUseCallback = () => {
-    console.log('LikeUseCallback')
+    /*console.log('LikeUseCallback')*/
     const [counter, setCounter] = useState(0);
     const [books, setBooks] = useState(['React', 'JavaScript', 'CSS', 'Redux']);
 
@@ -101,7 +101,7 @@ type BooksSecretPropsType = {
 }
 
 const BooksSecret = (props: BooksSecretPropsType) => {
-     console.log('BooksSecret')
+   /*  console.log('BooksSecret')*/
     return <div>
         <button onClick={() => props.addBook()}>add book</button>
         {/*{props.books.map((b, i) => <div key={i}>{b}</div>)}*/}

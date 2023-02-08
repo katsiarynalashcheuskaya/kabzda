@@ -7,6 +7,8 @@ import UncontrolledAccordion from "./components/UncontrolledAccordion/Uncontroll
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
 import Select from "./components/Select/Select";
 import {DifficultCountingExample, HelpsReactMemoExample, LikeUseCallback} from "./components/UseMemo/UseMemo";
+import {Example1} from "./components/UseState/UseState";
+import {SetTimeoutExample, SimpleExample} from "./components/UseEffect/UseEffect";
 
 //function declaration
 function App() {
@@ -51,6 +53,12 @@ function App() {
         <DifficultCountingExample/>
         <HelpsReactMemoExample/>
         <LikeUseCallback/>
+        <hr/>
+        <Example1/>
+        <hr/>
+        <SimpleExample/>
+        <hr/>
+        <SetTimeoutExample/>
         {/*<SelectWithoutValue value={value1} onChange={setValue1}
                 items={[
                     {value: '1', title: 'Minsk'},
