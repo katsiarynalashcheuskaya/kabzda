@@ -9,6 +9,7 @@ import Select from "./components/Select/Select";
 import {DifficultCountingExample, HelpsReactMemoExample, LikeUseCallback} from "./components/UseMemo/UseMemo";
 import {Example1} from "./components/UseState/UseState";
 import {SetTimeoutExample, SimpleExample} from "./components/UseEffect/UseEffect";
+import {Clock} from "./components/Clock/Clock";
 
 //function declaration
 function App() {
@@ -59,6 +60,8 @@ function App() {
         <SimpleExample/>
         <hr/>
         <SetTimeoutExample/>
+        <hr/>
+        <Clock/>
         {/*<SelectWithoutValue value={value1} onChange={setValue1}
                 items={[
                     {value: '1', title: 'Minsk'},
