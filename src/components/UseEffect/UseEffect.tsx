@@ -45,13 +45,13 @@ export const SimpleExample = () => {
 }
 
 export const SetTimeoutExample = () => {
-    console.log('SetTimeout Example');
+   /* console.log('SetTimeout Example');*/
 
     const [counter, setCounter] = useState(1)
     const [fake, setFake] = useState(1)
 
     useEffect(()=>{
-        console.log('useEffect');
+       /* console.log('useEffect');*/
      /*   document.title = counter.toString();*/
         /*setInterval(()=>{
             console.log('tick: '+ counter)

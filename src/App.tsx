@@ -10,6 +10,7 @@ import {DifficultCountingExample, HelpsReactMemoExample, LikeUseCallback} from "
 import {Example1} from "./components/UseState/UseState";
 import {SetTimeoutExample, SimpleExample} from "./components/UseEffect/UseEffect";
 import {Clock} from "./components/Clock/Clock";
+import {ResetEffectExample} from "./components/UseEffect/ResetEffect";
 
 //function declaration
 function App() {
@@ -61,7 +62,9 @@ function App() {
         <hr/>
         <SetTimeoutExample/>
         <hr/>
-        <Clock/>
+        <Clock mode={'digital'}/>
+        <Clock mode={'analog'}/>
+        <ResetEffectExample/>
         {/*<SelectWithoutValue value={value1} onChange={setValue1}
                 items={[
                     {value: '1', title: 'Minsk'},
