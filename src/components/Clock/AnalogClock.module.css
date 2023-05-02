@@ -22,14 +22,14 @@
     transform-origin: bottom left;
 }
 .clock .analog_clock .seconds {
-    border-left: solid 1px green;
+    border-left: solid 2px rgb(255, 0, 0);
 }
 .clock .analog_clock .minutes {
-    border-left: solid 1px #c00;
+    border-left: solid 2px #00e797;
 }
 .clock .analog_clock .hours {
     width: 35px;
     height: 35px;
     top: 15px;
-    border-left: solid 2px #000;
+    border-left: solid 2px #000000;
 }
